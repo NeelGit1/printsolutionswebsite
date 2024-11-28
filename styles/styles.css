@@ -1,0 +1,55 @@
+body {
+    margin: auto;
+    width: 75vw;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(ellipse at top left,
+            /* Light source from the top-left corner */
+            #ffffff,
+            /* White for the "sunlight" center */
+            #9d4eff 40%,
+            /* Lighter purple */
+            #6F00FF 70%,
+            /* Vibrant purple */
+            #4c00b3 100%
+            /* Deep purple at the edge */
+        ),
+        radial-gradient(ellipse at top right,
+            /* Light source from the top-right corner */
+            #ffffff,
+            /* White for the "sunlight" center */
+            #9d4eff 40%,
+            /* Lighter purple */
+            #6F00FF 70%,
+            /* Vibrant purple */
+            #4c00b3 100%
+            /* Deep purple at the edge */
+        );
+    background-size: cover;
+    /* Ensures the gradients cover the entire page */
+    background-position: center;
+    /* Centers the gradients */
+
+    /* Light background color for the page */
+}
+
+
+
+
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .filters-container {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-container {
+        flex: 0 0 100%;
+    }
+}

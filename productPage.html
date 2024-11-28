@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/search-filter.css">
+    <link rel="stylesheet" href="./styles/main-container.css">
+    <link rel="stylesheet" href="./styles/filters-container.css">
+    <link rel="stylesheet" href="./styles/products-container.css">
+</head>
+
+<body>
+    <div>
+        <div class="search-filter">
+            <div class="sort-container">
+                <button class="sort-button">Sort <span class="arrow">&#9660;</span></button>
+                <div class="dropdown-content-1">
+                    <a href="#" data-sort="price-low-to-high">Price: Low to High</a>
+                    <a href="#" data-sort="price-high-to-low">Price: High to Low</a>
+                    <a href="#" data-sort="rating">Rating</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+
+
+            <div class="filters-container">
+                <!-- Filters Applied Section -->
+                <div class="filters-applied">
+                    <h3>Filters Applied</h3>
+                    <div class="applied-filters"></div> <!-- Filter tags will be dynamically added here -->
+                </div>
+
+                <!-- here ever list element is acting as a filter this to detect which option is chosen each one is declared with the same identifier-->
+
+                <div class="filter-categories">
+                    <div class="brand">
+                        <h2>Select a brand</h2>
+                        <div class="dropdown">
+                            <button>Brands</button>
+                            <div class="dropdown-content-2">
+                                <a href="#" class="filter-option" filter-type="brand" data-filter="Canon">Canon</a>
+                                <a href="#" class="filter-option" filter-type="brand" data-filter="HP">HP</a>
+                                <a href="#" class="filter-option" filter-type="brand"
+                                    data-filter="Konica Minolta">Konica
+                                    Minolta</a>
+                                <a href="#" class="filter-option" filter-type="brand" data-filter="Ricoh">Ricoh</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category">
+                        <h2>Speed Category</h2>
+                        <ul>
+                            <li class="filter-option" filter-type="speedCategory" data-filter="1-35 PPM">1-35 PPM</li>
+                            <li class="filter-option" filter-type="speedCategory" data-filter="35-45 PPM">35-45 PPM</li>
+                            <li class="filter-option" filter-type="speedCategory" data-filter="45-55 PPM">45-55 PPM</li>
+                            <li class="filter-option" filter-type="speedCategory" data-filter="55-75 PPM">55-75 PPM</li>
+                            <li class="filter-option" filter-type="speedCategory" data-filter="75+ PPM">75+ PPM</li>
+                        </ul>
+                    </div>
+
+                    <div class="capacity">
+                        <h2>Color Capacity</h2>
+                        <ul>
+                            <li class="filter-option" filter-type="colorCapacity" data-filter="Black & White Copier">
+                                Black &
+                                White Copier</li>
+                            <li class="filter-option" filter-type="colorCapacity" data-filter="Color Copier">Color
+                                Copier
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="type">
+                        <h2>Copier Type</h2>
+                        <ul>
+                            <li class="filter-option" filter-type="copierType" data-filter="Digital Press">Digital Press
+                            </li>
+                            <li class="filter-option" filter-type="copierType" data-filter="Office Press">Office Press
+                            </li>
+                            <li class="filter-option" filter-type="copierType" data-filter="Wide Press">Wide Press</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-container">
+                <!-- Product cards will be injected here -->
+            </div>
+
+            
+
+
+
+        </div>
+
+    </div>
+
+    <script type="module" src="scripts.js"></script>
+    <script type="module" src="filters-section.js"></script>
+
+</body>
+
+</html>
